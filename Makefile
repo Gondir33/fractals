@@ -9,8 +9,16 @@ CFLAGS = -Wall -Wextra -Werror
 INCLD = includes/
 
 SRC = src/main.c \
-						src/utils.c \
-						src/frac.c 
+		src/utils.c \
+		src/frac.c \
+		src/ft_itoa_address.c\
+		src/ft_itoa_hex.c\
+		src/ft_itoa_uns.c\
+		src/ft_itoa.c\
+		src/ft_pars.c\
+		src/ft_printf.c\
+		src/ft_utils.c\
+		src/ft_utils2.c
 
 OBJ = $(SRC:.c=.o)
 

@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/22 15:08:10 by sbendu            #+#    #+#             */
-/*   Updated: 2022/03/11 12:32:54 by marvin           ###   ########.fr       */
+/*   Updated: 2022/03/11 13:11:40 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,14 +99,14 @@ int	check_input(int ac, char **av)
 {
 	if (ac < 2)
 	{
-		printf("Mandelbrot: %s\nJulia:%s and 2 param like that\n%s %s\n",
+		ft_printf("Mandelbrot: %s\nJulia:%s and 2 param like that\n%s %s\n",
 			"Mandelbrot", "Julia", "-0.7", " 0.27015");
 		return (1);
 	}
 	if ((ft_strncmp(av[1], "Mandelbrot", 11) != 0)
 		&& (!(ft_strncmp(av[1], "Julia", 6) == 0 && ac > 3)))
 	{
-		printf("Mandelbrot: %s\nJulia:%s and 2 param like that\n%s %s\n",
+		ft_printf("Mandelbrot: %s\nJulia:%s and 2 param like that\n%s %s\n",
 			"Mandelbrot", "Julia", "-0.7", " 0.27015");
 		return (1);
 	}

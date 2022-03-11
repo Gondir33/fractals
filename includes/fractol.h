@@ -6,20 +6,18 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/22 14:07:26 by sbendu            #+#    #+#             */
-/*   Updated: 2022/03/11 12:33:23 by marvin           ###   ########.fr       */
+/*   Updated: 2022/03/11 13:13:22 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FRACTOL_H
 # define FRACTOL_H
 
-# include <stdio.h>
-# include <unistd.h>
 # include <math.h>
-# include <stdlib.h>
 # include <fcntl.h>
 # include <mlx.h>
-# define WIDTH	1200
+# include "ft_printf.h"
+# define WIDTH	800
 # define HEIGHT	800
 
 typedef struct s_complex

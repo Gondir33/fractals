@@ -15,7 +15,7 @@
 void	init_vars(t_vars *vars, char **av)
 {
 	vars->offx = -2;
-	vars->offy = -1.4;
+	vars->offy = -2;
 	vars->side = 4;
 	vars->c.re = 0;
 	vars->c.im = 0;
