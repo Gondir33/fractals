@@ -75,13 +75,8 @@ int	main(int ac, char **av)
 {
 	t_vars	vars;
 
-	if (ac < 2 || (ft_strncmp(av[1], "Mandelbrot", 11) != 0)
-		&& (!(ft_strncmp(av[1], "Julia", 6) == 0 && ac > 3)))
-	{
-		printf("Mandelbrot: %s\nJulia:%s and 2 param like that\n%s %s\n",
-			"Mandelbrot", "Julia", "-0.7", " 0.27015");
+	if (check_input(ac, av) != 0)
 		return (1);
-	}
 	init_vars(&vars, av);
 	vars.mlx = mlx_init();
 	vars.win = mlx_new_window(vars.mlx, WIDTH, HEIGHT, "fract-ol");

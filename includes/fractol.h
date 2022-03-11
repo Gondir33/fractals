@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/22 14:07:26 by sbendu            #+#    #+#             */
-/*   Updated: 2022/03/09 15:56:05 by marvin           ###   ########.fr       */
+/*   Updated: 2022/03/11 12:33:23 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,5 +49,6 @@ double	ft_double(char *s);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 void	zoom(t_vars *vars, char k, double x, double y);
 void	init_img(t_vars *vars);
+int		check_input(int ac, char **av);
 
 #endif
